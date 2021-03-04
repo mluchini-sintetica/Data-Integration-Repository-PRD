@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/27/2020 2:32:19 PM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="SRV-DIR-DEV"
+  DTS:CreatorComputerName="SRV-DIR-PRD"
   DTS:CreatorName="SINTE00\mluchini"
   DTS:DTSID="{E3832917-21CE-48CA-8320-1DB4CF94B807}"
   DTS:EnableConfig="True"
@@ -12,8 +12,9 @@
   DTS:LocaleID="2064"
   DTS:ObjectName="SEA_VISION_DWFT"
   DTS:PackageType="5"
-  DTS:VersionBuild="477"
-  DTS:VersionGUID="{4FEF12AD-4417-4CB4-ABED-3FC8D280D586}">
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="478"
+  DTS:VersionGUID="{2C5B8AB4-8546-4224-89FB-CDD00FBCA076}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,10 +26,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=192.168.200.19;User ID=PARCEL_DIR_R;Initial Catalog=Parcel2008_SINT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAATeqbPi4u06+KItCQqL+ogAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC/0ZET+lMrxySbhXefVr/nAAAAAASAAACgAAAAEAAAADnjVJVDKVusHtWJcu4tqt0gAAAAWjQzxKWqM9fNu64vIENzTLPJFAQpUyn4HkO9bhQLEAEUAAAAKNpeSmOv8YbqUeL7JwKM/KVA/sM</DTS:Password>
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="xGAyCtgXuM8="
+            IV="0Tq1qVdxnM7MTcup6flcDw==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+            <CipherData>
+              <CipherValue>0Tq1qVdxnM7MTcup6flcDzfV2M5Pxdj1rInkN+XYAIjHx441IkH+KU9Zb7ekQq1Ui7eTI9Hi4wQKxBREZ+YQBg7ehX7d91J9dGYsewOEPDnbNKj6is85LCDiDcTRs8bSydAj+iM14vR6Uu26FG0wxAhOlj84IeJ5H+if6gehW5ZImf025wtHSSLLxYAl59Pa</CipherValue>
+            </CipherData>
+          </EncryptedData>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4154,19 +4161,6 @@ FROM
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DWH LOAD\TBDWFT_PROCESS_ORDER\TBDWFT_PROCESS_ORDER ins\TBDWTMP_PROCESS_ORDER">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DWH LOAD\TBDWFT_PROCESS_ORDER\TBDWFT_PROCESS_ORDER ins\INS TRG table">
     <Properties>
       <Property>
@@ -4184,6 +4178,19 @@ FROM
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DWH LOAD\TBDWFT_PROCESS_ORDER\TBDWFT_PROCESS_ORDER ins\TBDWTMP_PROCESS_ORDER">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

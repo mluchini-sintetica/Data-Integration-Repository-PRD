@@ -5,10 +5,13 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=SRV-DIR-DEV\SRVDIRDEV;User ID=DIR_DWH_ETL;Initial Catalog=DIR_DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      DTS:ConnectionString="Data Source=SRV-DIR-PRD;User ID=DIR_DWH_ETL;Initial Catalog=DIR_DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAATeqbPi4u06+KItCQqL+ogAAAAACAAAAAAADZgAAwAAAABAAAAAwOu8UEBVrI8zBgrbJTfzJAAAAAASAAACgAAAAEAAAAGV5Y1XgM6fyYEgdsNrWZbF4AAAA4b75HFBa56dlZ4IOo2ATKviXy6rH5H1K7dRhUsSC4vZt5H/pp5IQMWNsKpl7ehZU6iECVeN7Nbleb4RkNliKYNoXzVcuXMG4lNVBpF6YRNpVXEqIGCi/qu54n3fSuGPM34uTyMuXVXhJ5pagbGl3y2Oc4Wh6irY3FAAAAG6aaQqShq/IR9DoS1Ne3FMKBStc</DTS:Password>
+        Sensitive="1"
+        p4:Salt="z7v28lPKxFU="
+        p4:IV="Ol4fJtL0VHgHmebXCHp/uQ=="
+        p4:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" xmlns:p4="www.microsoft.com/SqlServer/SSIS">iJWjecoCW+OeBBwPjNovMZy1TiPMJlooyCH88/Qd1JKgMsoWz42AaIB3zYeXM4YtMEj+poeRWbi4uSabb/a4EXBbogY6S1drHgZlyzQzsOKL5HyvyH6d6V4HIIEw6Pg8u2ENOFoffKM5TuCI+cmjwOzgbeJb5mRd8k0D9hlDo+s=</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="7/10/2020 11:19:22 AM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="SRV-DIR-DEV"
+  DTS:CreatorComputerName="SRV-DIR-PRD"
   DTS:CreatorName="SINTE00\mluchini"
   DTS:DTSID="{A2257612-AE91-408E-87C6-F9E921AC76A2}"
   DTS:ExecutableType="Microsoft.Package"
@@ -11,8 +11,9 @@
   DTS:LocaleID="2064"
   DTS:ObjectName="DIR_DWH_LOAD"
   DTS:PackageType="5"
-  DTS:VersionBuild="220"
-  DTS:VersionGUID="{16BBB516-F64D-4216-BBA7-70FB99269996}">
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="221"
+  DTS:VersionGUID="{EEB36C74-5521-4A55-B779-E5E719A347C6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>

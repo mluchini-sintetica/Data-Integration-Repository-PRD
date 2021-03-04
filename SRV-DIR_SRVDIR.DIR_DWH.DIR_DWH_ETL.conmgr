@@ -5,13 +5,10 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=SRV-DIR-PRD;User ID=DIR_DWH_ETL;Initial Catalog=DIR_DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      DTS:ConnectionString="Data Source=SRV-DIR-DEV\SRVDIRDEV;User ID=DIR_DWH_ETL;Initial Catalog=DIR_DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1"
-        p4:Salt="0zGvuncVX4U="
-        p4:IV="Z058NYhHRDYg7wj5JTNSZw=="
-        p4:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" xmlns:p4="www.microsoft.com/SqlServer/SSIS">WE9f9/k4JFLRKT2J5H0n5ymFzwXFdhDxhrH9OA0REa/KpPuux899BmZkaxsBuaTSk7XOl35LJ9svnfLGewQYaG2/GC5D7BOa8wxXkI1P6pZLglsrlisUo4qiM7l7eZqLo8jLpEDQR0N4NMJ1SP48uBRNn/pq55XOekf3rjxUcvw=</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAATeqbPi4u06+KItCQqL+ogAAAAACAAAAAAADZgAAwAAAABAAAAAwOu8UEBVrI8zBgrbJTfzJAAAAAASAAACgAAAAEAAAAGV5Y1XgM6fyYEgdsNrWZbF4AAAA4b75HFBa56dlZ4IOo2ATKviXy6rH5H1K7dRhUsSC4vZt5H/pp5IQMWNsKpl7ehZU6iECVeN7Nbleb4RkNliKYNoXzVcuXMG4lNVBpF6YRNpVXEqIGCi/qu54n3fSuGPM34uTyMuXVXhJ5pagbGl3y2Oc4Wh6irY3FAAAAG6aaQqShq/IR9DoS1Ne3FMKBStc</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

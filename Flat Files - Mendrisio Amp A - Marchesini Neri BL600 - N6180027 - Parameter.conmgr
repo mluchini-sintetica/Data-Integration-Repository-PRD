@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Flat Files - Mendrisio Sea Vision Client - Parameter"
-  DTS:DTSID="{DA29CB7A-20DA-4924-90BB-75A3710D9B16}"
+  DTS:ObjectName="Flat Files - Mendrisio Amp A - Marchesini Neri BL600 - N6180027 - Parameter"
+  DTS:DTSID="{4DDAB014-BBF0-4B50-A2CE-7664FD5D6B0C}"
+  DTS:Description="Marchesini Neri BL600"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,7 +13,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="65001"
-      DTS:ConnectionString="D:\Files_output\Mendrisio\Client_Formato.csv">
+      DTS:ConnectionString="D:\Files_output\Mendrisio\BLF600_Formato.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -20,7 +21,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="Contatore"
-          DTS:DTSID="{04C061B1-BF06-4A68-855B-3207B30CAB1D}"
+          DTS:DTSID="{2DCF4579-781A-4A5A-B9C1-FE217B73E292}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -29,15 +30,50 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Parametro"
-          DTS:DTSID="{9FD571EC-A498-446C-A470-F5D7B501591E}"
+          DTS:DTSID="{FBFB6F0F-6431-460F-89DE-988EAD022284}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x007C_"
+          DTS:MaximumWidth="1000"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Valore"
+          DTS:DTSID="{7824FF3C-C0B4-473F-9664-DE314F95A00A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x007C_"
+          DTS:MaximumWidth="100"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Minimo"
+          DTS:DTSID="{6BE5FE8B-44D2-4255-BEAF-965FD3A00779}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x007C_"
+          DTS:MaximumWidth="100"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Massimo"
+          DTS:DTSID="{FF1EB3AA-D107-4D72-9C8E-968D628534E3}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x007C_"
           DTS:DataType="3"
           DTS:TextQualified="True"
-          DTS:ObjectName="SeveritÃ "
-          DTS:DTSID="{01AFFFC3-7DE7-41A9-963E-83CB3D4019F3}"
+          DTS:ObjectName="ID"
+          DTS:DTSID="{0575F20F-41D9-45FE-8F02-B393E42B1985}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x007C_"
+          DTS:DataType="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Severità"
+          DTS:DTSID="{02955F52-2976-44FD-8025-65A6FBBC31F7}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -46,7 +82,7 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Tag"
-          DTS:DTSID="{8C555222-6A94-4A3F-8C0F-14DA97775DFB}"
+          DTS:DTSID="{11F795F5-F7FE-4923-A294-12689819E6A5}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -54,8 +90,8 @@
           DTS:MaximumWidth="4000"
           DTS:DataType="130"
           DTS:TextQualified="True"
-          DTS:ObjectName="Parametro In Chiaro"
-          DTS:DTSID="{097A9EE3-B86D-4AA1-BB9D-D82B14713DC5}"
+          DTS:ObjectName="Parametro in Chiaro"
+          DTS:DTSID="{7DE98F64-B240-4C2A-B460-DE9E19B9B9E7}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -64,7 +100,7 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Filtro"
-          DTS:DTSID="{DB37F11D-FA27-4FAD-BC6A-61B1E5FC576B}"
+          DTS:DTSID="{22C84B1D-2935-4384-9FC6-C56CB47B58B9}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -73,7 +109,7 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Descrizione Parametro"
-          DTS:DTSID="{7DC05051-93C1-447E-AEE0-7C0C3D62D5E7}"
+          DTS:DTSID="{EC426928-102E-4C71-B6D6-7734398BA4F6}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

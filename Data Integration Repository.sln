@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Data Integration Repository", "Data Integration Repository.dtproj", "{E2707B6F-B04E-46C8-BEDA-DD35F7C0415C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+		Production|Default = Production|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2707B6F-B04E-46C8-BEDA-DD35F7C0415C}.Development|Default.ActiveCfg = Development
+		{E2707B6F-B04E-46C8-BEDA-DD35F7C0415C}.Development|Default.Build.0 = Development
+		{E2707B6F-B04E-46C8-BEDA-DD35F7C0415C}.Production|Default.ActiveCfg = Production
+		{E2707B6F-B04E-46C8-BEDA-DD35F7C0415C}.Production|Default.Build.0 = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EA4C0DA-AAF0-46B3-B5BB-E0C242A16FBC}
+	EndGlobalSection
+EndGlobal

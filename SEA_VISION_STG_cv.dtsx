@@ -13,8 +13,8 @@
   DTS:ObjectName="SEA_VISION_STG_cv"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="324"
-  DTS:VersionGUID="{AEF5E72A-4CA7-4C2D-AB55-114DA825FD92}">
+  DTS:VersionBuild="325"
+  DTS:VersionGUID="{46DEE356-7913-40DD-893D-59B3B48B8EBD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Configurations>
@@ -456,7 +456,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Delete STG TRG TABLE"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:PropertyExpression
                 DTS:Name="SqlStatementSource">"delete from " + @[User::out_TABLE_TARGET_CD] + " where site_id = " + (DT_WSTR,2) @[User::out_SITE_ID]</DTS:PropertyExpression>
@@ -595,7 +595,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="MAX TABLE ID"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3744,8 +3744,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="1455,996"
-          Size="1455,1039"
+          PanelSize="1590,996"
+          Size="1590,1039"
           Id="Package\STAGING LOAD"
           TopLeft="208,255" />
         <NodeLayout
@@ -3776,13 +3776,13 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="935.5,1294">
+          TopLeft="1003,1294">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-194.166666666667,-680.888888888889"
+              EndConnector="-261.666666666667,-680.888888888889"
               Start="0,0"
-              End="-194.166666666667,-673.388888888889">
+              End="-261.666666666667,-673.388888888889">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3793,13 +3793,13 @@
                     Point2="0,-340.444444444445"
                     Point3="-4,-340.444444444445" />
                   <mssgle:LineSegment
-                    End="-190.166666666667,-340.444444444445" />
+                    End="-257.666666666667,-340.444444444445" />
                   <mssgle:CubicBezierSegment
-                    Point1="-190.166666666667,-340.444444444445"
-                    Point2="-194.166666666667,-340.444444444445"
-                    Point3="-194.166666666667,-344.444444444445" />
+                    Point1="-257.666666666667,-340.444444444445"
+                    Point2="-261.666666666667,-340.444444444445"
+                    Point3="-261.666666666667,-344.444444444445" />
                   <mssgle:LineSegment
-                    End="-194.166666666667,-673.388888888889" />
+                    End="-261.666666666667,-673.388888888889" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3814,9 +3814,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="186.555555555556,86.666666666667"
+              EndConnector="254.055555555556,86.666666666667"
               Start="0,0"
-              End="186.555555555556,79.166666666667">
+              End="254.055555555556,79.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3827,13 +3827,13 @@
                     Point2="0,43.3333333333335"
                     Point3="4,43.3333333333335" />
                   <mssgle:LineSegment
-                    End="182.555555555556,43.3333333333335" />
+                    End="250.055555555556,43.3333333333335" />
                   <mssgle:CubicBezierSegment
-                    Point1="182.555555555556,43.3333333333335"
-                    Point2="186.555555555556,43.3333333333335"
-                    Point3="186.555555555556,47.3333333333335" />
+                    Point1="250.055555555556,43.3333333333335"
+                    Point2="254.055555555556,43.3333333333335"
+                    Point3="254.055555555556,47.3333333333335" />
                   <mssgle:LineSegment
-                    End="186.555555555556,79.166666666667" />
+                    End="254.055555555556,79.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

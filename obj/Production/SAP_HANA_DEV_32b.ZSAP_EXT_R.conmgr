@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SAP_HANA_DEV_32b ZSAP_EXT_R"
+  DTS:DTSID="{D04CB7DE-7625-4879-8FAE-1C056D92A615}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=ZSAP_EXT_R;Dsn=SAP_HANA_DEV_32b;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

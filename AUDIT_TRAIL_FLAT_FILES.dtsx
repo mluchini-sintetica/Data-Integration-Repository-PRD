@@ -3,7 +3,7 @@
   DTS:refId="Package"
   DTS:CreationDate="5/29/2020 6:54:53 PM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="SRV-DIR-PRD"
+  DTS:CreatorComputerName="SRV-DIR-DEV"
   DTS:CreatorName="SINTE00\mluchini"
   DTS:DTSID="{06B19BE7-1E4B-4E75-9554-6D94ACBAFBBA}"
   DTS:EnableConfig="True"
@@ -14,7 +14,7 @@
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
   DTS:VersionBuild="201"
-  DTS:VersionGUID="{1139D954-D9E1-48D7-B7B4-192FBDE1C9DB}">
+  DTS:VersionGUID="{CF17B3DD-EE79-4B28-92EB-A55C7A98BD7F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Configurations>
@@ -257,7 +257,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Email for MatLab Overtime"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -332,7 +332,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Kill MatLab and Excel after"
       DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
@@ -2353,7 +2353,9 @@ where id=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2387,7 +2389,9 @@ where id=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2421,7 +2425,9 @@ where id=?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -2517,16 +2523,16 @@ where id=?</property>
           PanelSize="364,285"
           Size="364,43"
           Id="Package\Wait for MatLab"
-          TopLeft="185.055555555555,418.666666666667" />
+          TopLeft="186.055555555555,418.666666666667" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="385.833333333333,389.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-18.777777777778,29.333333333334"
+              EndConnector="-17.777777777778,29.3333333333341"
               Start="0,0"
-              End="-18.777777777778,21.833333333334">
+              End="-17.777777777778,21.8333333333341">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2537,13 +2543,13 @@ where id=?</property>
                     Point2="0,14.666666666667"
                     Point3="-4,14.666666666667" />
                   <mssgle:LineSegment
-                    End="-14.777777777778,14.666666666667" />
+                    End="-13.777777777778,14.666666666667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-14.777777777778,14.666666666667"
-                    Point2="-18.777777777778,14.666666666667"
-                    Point3="-18.777777777778,18.666666666667" />
+                    Point1="-13.777777777778,14.666666666667"
+                    Point2="-17.777777777778,14.666666666667"
+                    Point3="-17.777777777778,18.666666666667" />
                   <mssgle:LineSegment
-                    End="-18.777777777778,21.833333333334" />
+                    End="-17.777777777778,21.8333333333341" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2656,13 +2662,13 @@ where id=?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 15]"
-          TopLeft="367.055555555555,461.666666666667">
+          TopLeft="368.055555555555,461.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-79.0555555555553,191.222222222222"
+              EndConnector="-80.0555555555553,191.222222222222"
               Start="0,0"
-              End="-79.0555555555553,183.722222222222">
+              End="-80.0555555555553,183.722222222222">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2673,13 +2679,13 @@ where id=?</property>
                     Point2="0,114.020703933747"
                     Point3="-4,114.020703933747" />
                   <mssgle:LineSegment
-                    End="-75.0555555555553,114.020703933747" />
+                    End="-76.0555555555553,114.020703933747" />
                   <mssgle:CubicBezierSegment
-                    Point1="-75.0555555555553,114.020703933747"
-                    Point2="-79.0555555555553,114.020703933747"
-                    Point3="-79.0555555555553,118.020703933747" />
+                    Point1="-76.0555555555553,114.020703933747"
+                    Point2="-80.0555555555553,114.020703933747"
+                    Point3="-80.0555555555553,118.020703933747" />
                   <mssgle:LineSegment
-                    End="-79.0555555555553,183.722222222222" />
+                    End="-80.0555555555553,183.722222222222" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2780,24 +2786,24 @@ where id=?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="549.055555555555,440.166666666667">
+          TopLeft="550.055555555555,440.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-59.833333333333,42.5000000000001"
+              EndConnector="-60.833333333333,42.5"
               Start="0,0"
-              End="-59.833333333333,35.0000000000001">
+              End="-60.833333333333,35">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-55.833333333333,0" />
+                    End="-56.833333333333,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-55.833333333333,0"
-                    Point2="-59.833333333333,0"
-                    Point3="-59.833333333333,4" />
+                    Point1="-56.833333333333,0"
+                    Point2="-60.833333333333,0"
+                    Point3="-60.833333333333,4" />
                   <mssgle:LineSegment
-                    End="-59.833333333333,35.0000000000001" />
+                    End="-60.833333333333,35" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

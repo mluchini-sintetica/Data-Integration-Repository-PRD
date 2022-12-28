@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.162.15.SeaVisionPROD_ME.SEAVISION_DIR_R"
+  DTS:DTSID="{BF5F313F-8994-4B14-A0D5-778310482F22}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=192.168.162.15;User ID=SEAVISION_DIR_R;Initial Catalog=SeaVisionPROD_ME;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="Krc6dqweLdw="
+        p4:IV="gD+fAvat6ZDwIxuyvznQOA=="
+        p4:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" xmlns:p4="www.microsoft.com/SqlServer/SSIS">Sii9ENfKV7VKCRxii5Voi3gGFpRmCHvursJ6tLCEhuGiKWYH1TSjWPcI0r/Pox3bw73OipLwgbOhYiaeQCD+hklfsHC20rF7elJYgTwH73shVVOHdNFJ9uJXF0pfVL9Dp6PL7TEJzkFngeQ8qgkR24qs8zaDWBsM/4uYsyLjWx8=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

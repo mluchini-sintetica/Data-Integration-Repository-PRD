@@ -3,7 +3,7 @@
   DTS:refId="Package"
   DTS:CreationDate="5/27/2020 2:32:19 PM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="SRV-DIR-PRD"
+  DTS:CreatorComputerName="SRV-DIR-DEV"
   DTS:CreatorName="SINTE00\mluchini"
   DTS:DTSID="{E3832917-21CE-48CA-8320-1DB4CF94B807}"
   DTS:EnableConfig="True"
@@ -13,8 +13,8 @@
   DTS:ObjectName="SEA_VISION_DWFT"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="480"
-  DTS:VersionGUID="{E7A54C9A-1DF3-4157-9E11-D921D78C7D93}">
+  DTS:VersionBuild="488"
+  DTS:VersionGUID="{826C4FFD-86CD-46FF-8DAB-0294A022245C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,12 +28,12 @@
           DTS:ConnectionString="Data Source=192.168.200.19;User ID=PARCEL_DIR_R;Initial Catalog=Parcel2008_SINT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="cziLMJf9GDQ="
-            IV="pWHmSXaJsimwQ3j6i8ffHw==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="/4SrxPXcWXs="
+            IV="CQ+00UyI1o1w0BhiQD7PCw==" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
             <CipherData>
-              <CipherValue>pWHmSXaJsimwQ3j6i8ffH4YL+38lm4Ih+RUZDprMhpIiEoS9vo38QAZhJct1f8UZS/kVPN7rLdjFPrDQmQry+f2DVsVT0SsHYd3F2MJNh1Tf6IN2y+RbAen7lkjAuDDzy41YX2RGrPLTXr8r8VtepwcS7f2lhkoU/1laAwEStt41ZZR6cBscAPxg7irKIkOy</CipherValue>
+              <CipherValue>CQ+00UyI1o1w0BhiQD7PC8ZCQ+pand+62KLObMCrUNbZUayp+1ZaFzEN8BjehGj136+svPf+Dw5dk72WVx3gIVfHGSDliBbDs8eMEG7SsFrnoGZz2SodCE9OrPk3oZ7XyWVwzXlOtV+/hY8H285nHUb7QTC2neb0oaYc1tLi2aKqbBRFh8xozZ3IK+loHSPr</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -185,7 +185,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Assign SITE_ID"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -213,7 +213,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Assign SOURCE_SYSTEM_ID"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1903,8 +1903,8 @@ FROM
 (SELECT * FROM TBST_SEA_REG_PROCESSORDER WHERE site_id = ? and row_sts_flg=1) a join
 (SELECT * FROM TBST_SEA_REG_BATCHES WHERE site_id = ? and row_sts_flg=1 and processorder&lt;&gt;'') b on a.batchID = b.batchID join
 (SELECT id, vision_system_line_id FROM TBDWMN_PRODUCTION_LINE WHERE site_cd = ? and phase_cd = 'Packaging' and getdate() between VALIDITY_START_DT and VALIDITY_END_DT) x on b.lineid = x.vision_system_line_id left join
-(SELECT id as tbdwan_batch_id, batch_cd, article_cd FROM TBDWAN_BATCH WHERE SITE_ID = ?) c on b.batchname = c.batch_cd and b.recipeid = c.ARTICLE_CD left join
-(SELECT id as tbdwan_article_id, article_cd FROM tbdwan_article WHERE site_id = ? and row_sts_flg=1) d on b.recipeid = d.ARTICLE_CD full join
+(SELECT id as tbdwan_batch_id, batch_cd, article_cd FROM TBDWAN_BATCH_ALL WHERE SITE_ID = ?) c on b.batchname = c.batch_cd and b.recipeid = c.ARTICLE_CD left join
+(SELECT id as tbdwan_article_id, article_cd FROM tbdwan_article_ALL WHERE site_id = ? and row_sts_flg=1) d on b.recipeid = d.ARTICLE_CD full join
 
 (SELECT id as trg_ID, PROCESS_ORDER_CD, row_sts_flg as trg_row_sts_flg FROM TBDWFT_PROCESS_ORDER WHERE site_id = ?) trg on b.processorder = trg.PROCESS_ORDER_CD</property>
                         <property

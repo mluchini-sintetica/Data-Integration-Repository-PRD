@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="FTP - Nemosped 89 207 236 56"
+  DTS:DTSID="{EA5751E9-0428-490D-A6F8-71655A7F5186}"
+  DTS:CreationName="FTP">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="89.207.236.56:2222">
+      <DTS:FtpConnection
+        DTS:ServerName="89.207.236.56"
+        DTS:ServerPort="2222"
+        DTS:ServerUserName="NEMO\sftpuser"
+        DTS:UsePassiveMode="True">
+        <DTS:Property
+          DTS:Name="ServerPassword"
+          Sensitive="1"
+          p5:Salt="rCS9P2pBJ3I="
+          p5:IV="sCOvEK8esQiXlsHsCRB9Dg=="
+          p5:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" xmlns:p5="www.microsoft.com/SqlServer/SSIS">p+SIpKHe6xeYOb1daBMXeyPNra62zvZ5oCzMa3Y0y65XcrBIjzEP9Lmm5hapdoJfojo8QVtDQMYXRAe+TTrbAdfsMrYcR0DJK/gK+6UrgiKcdvK8q20J+3i7mO2hmmAuUTWIZ4HIBaBs6tQT1YMvrvOLe7JRgNZAIzXlsVtPqkg=</DTS:Property>
+      </DTS:FtpConnection>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

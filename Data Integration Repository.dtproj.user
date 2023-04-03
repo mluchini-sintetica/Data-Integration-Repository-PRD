@@ -22,6 +22,8 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
+        <ServerName>SRV-DIR-PRD</ServerName>
+        <PathOnServer>/SSISDB/Project/Data Integration Repository</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>

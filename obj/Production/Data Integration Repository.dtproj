@@ -25,7 +25,7 @@
           <SSIS:Property SSIS:Name="CreatorName">SINTE00\mluchini</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorComputerName">SRV-DIR-PRD</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">Data Integration Repository</SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="kcU6TxDqFbA=" SSIS:IV="0gR7j2IbaYdbgmNhFTUShg==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">hI7QCxRWXRK7ZpOMGCa7rsb2EML/jrTulvjD5JWB6Ib6sF9b1sUYGrnKC1mR01138DMB1Wn0lnYXJnb00+6xzz6qA4wQizjcgUnMbwecJRWHWsNMp2D9GPP2CZO+Q57hy7PNwvuaLHEiq11rd/qPUSs086BqgmVmiuACIwMgLRV15bYgqQtE3akFbzQ9KPQh</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1" SSIS:Salt="HGlz6/9bwUI=" SSIS:IV="ttE2xINdOEeQNisovqtDBg==" SSIS:Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc">7UP2yYCD9VBsf1+rpfPuPOCqQbmFragss2WODKHnJ4+MSh4PaXccoonetOC2r44XPi0AgdFNLsHZWdu5YnkLE6zPoWbte5LHjiAbwrhiDVwteOJ8WZ4BaRx+uiExhqR09EDzlnX/6BzsXjMif5oBrAsiUfwA8n8rh3xe+QuV1VNxdvn/FXlmmYW1yu87jhF2</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -8609,7 +8609,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">1252</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">65001</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -10353,10 +10353,10 @@
                 <SSIS:Property SSIS:Name="Name">AUDIT_TRAIL_DW</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">658</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">667</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F60A1B60-9D0D-44DB-A712-441B60948207}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{42D49986-33E0-4C4F-9997-71322A9D08F0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -10373,6 +10373,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10386,6 +10388,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10516,10 +10520,10 @@
                 <SSIS:Property SSIS:Name="Name">DIR_DWH_LOAD</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">335</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">346</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6A118E14-411B-4F6A-A819-BB1CF64AE571}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{759158DA-F22B-4FA5-BBC4-FECCE9371237}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -10824,10 +10828,10 @@
                 <SSIS:Property SSIS:Name="Name">AUDIT_TRAIL_STG_cv_Vials_Pkg</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">612</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">614</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{AF6342B4-1B1A-43FA-A626-C17CA7C9188F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FBCF112F-7AF8-4BEF-A5FC-98D503211592}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
